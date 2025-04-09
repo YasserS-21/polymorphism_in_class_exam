@@ -67,7 +67,7 @@ public class NotificationServiceTest {
         for (Notification notification : notifications) {
             String output = captureOutput(() -> service.sendNotification(notification));
             assertTrue(output.contains("Sending to:"));
-            assertTrue(output.contains("content:"));
+            assertTrue(output.contains("Message:"));
             assertTrue(output.contains("Sending"));
         }
     }

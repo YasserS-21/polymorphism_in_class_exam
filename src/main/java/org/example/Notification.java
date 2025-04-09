@@ -18,6 +18,12 @@ public abstract class Notification {
 
     public abstract void send();
 
+    public void displayInfo() {
+        System.out.println("Sending to:" + this.getTargetToNotify());
+        System.out.println("Message:" + this.getMessage());
+        System.out.println("Sending");
+    }
+
     public void sendGeneral() {
 
     }

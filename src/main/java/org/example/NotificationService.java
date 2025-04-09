@@ -4,6 +4,7 @@ public class NotificationService {
 
     public void sendNotification(Notification notification) {
         notification.send();
+        notification.displayInfo();
     }
 
     public NotificationService(){
